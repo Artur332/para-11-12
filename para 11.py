@@ -1,4 +1,4 @@
-ЗАВДЯННЯ 1
+#ЗАВДЯННЯ 1
 
 class Vehicle:
     def __init__(self, make, model, mileage):
