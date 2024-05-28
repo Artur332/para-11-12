@@ -53,7 +53,7 @@ connect = sqlite3.connect('employees')
 
 cursor = connect.cursor()
 
-cursor.execute('''CREATE TABLE IF NOT EXISTS employees (id TEXT ,name TEXT ,position TEXT ,salary REAL)''')
+cursor.execute(''' INSERT INTO employees (id TEXT ,name TEXT ,position TEXT ,salary REAL)''')
 
 employees_data = [( 'Max', 'Manager', 22000),( 'Artur', "Manager", 19000),('Danulo', 'Manager', 23000)]
 cursor.executemany('INSERT INTO employees ', employees_data)
